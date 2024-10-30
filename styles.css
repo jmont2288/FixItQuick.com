@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* General Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* Fonts */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Header Styles */
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 25px;
+  background-color: white;
+  z-index: 10;
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+header nav img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+header nav a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+}
+
+header nav a:hover,
+.active {
+  color: #0f172a;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+}
+
+.hero {
+  position: relative;
+  padding-top: 100px;
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 62px;
+}
+
+/* Content */
+.body {
+  padding-top: 80px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 18px;
+  color: #334155;
+}
+
+section blockquote {
+  padding: 10px;
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+section button {
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #cbd5e1;
+  border: none;
+  border-radius: 24px;
+}
+
+section button:hover {
+  background-color: #94a3b8;
+}
+
+section button a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+}
+
+section button a:hover {
+  color: #1e293b;
+}
+
+section ol,
+ul {
+  padding-left: 0;
+}
+
+section ol li {
+  padding-bottom: 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section ul li {
+  padding-bottom: 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section ul li a {
+  color: #334155;
+}
+
+section p a {
+  color: #334155;
+}
+
+section h3 {
+  align-self: self-start;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+section h4 {
+  align-self: self-start;
+  margin-bottom: 0;
+}
+
+#location {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+figcaption {
+  text-align: center;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 40px 10px;
+  padding: 10px;
+  border: 2px solid #f1f5f9;
+  border-radius: 14px;
+  gap: 30px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card .container .title {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .container .title span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.card .container .subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.card .container p {
+  font-size: 14px;
+  color: #334155;
+}
+
+.card .container button {
+  margin: 20px 0;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid #f1f5f9;
+  border-radius: 14px;
+  padding: 40px 50px;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #334155;
+}
+
+form input {
+  display: block;
+  margin-top: 10px;
+  width: 90%;
+  padding: 10px 15px;
+}
+
+form textarea {
+  display: block;
+  margin-top: 10px;
+  width: 90%;
+  padding: 10px 15px;
+}
+
+form .radio, .checkbox {
+  width: auto;
+  display: inline;
+}
+
+form .submit {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #334155;
+  background-color: #cbd5e1;
+  font-weight: 500;
+  border: none;
+  border-radius: 24px;
+}
+
+form .submit:hover {
+  color: #1e293b;
+  background-color: #94a3b8;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #334155;
+}
+
+table th {
+  padding: 10px 5px;
+}
+
+table td {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 25px;
+  border-top: 2px solid #f1f5f9;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+footer div {
+  display: flex;
+  gap: 14px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
